@@ -1,7 +1,12 @@
 // 1. Basic Setup
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
 const container = document.querySelector('#container');
 const scroller = document.querySelector('#scroller');
-
+const Section = document.querySelectorAll(".section")
 // 2. Calculate heights
 const sectionHeight = window.innerHeight;
 const totalSections = 3;
@@ -26,3 +31,13 @@ container.addEventListener('wheel', (e) => {
     
     scroller.style.transform = `translateY(-${currentY}px)`;
 });
+Section.forEach((section)=>{
+  gsap.from(section,{
+ delay:2,
+ duartion:5,
+ scale:0,
+
+
+
+  })
+})
