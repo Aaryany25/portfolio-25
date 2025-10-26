@@ -6,10 +6,9 @@ const scroll = new LocomotiveScroll({
 });
 const container = document.querySelector('#container');
 const scroller = document.querySelector('#scroller');
-const Section = document.querySelectorAll(".section")
 // 2. Calculate heights
-const sectionHeight = window.innerHeight;
-const totalSections = 3;
+const sectionHeight = window.innerHeight +1;
+const totalSections = 4;
 const sequenceHeight = sectionHeight * totalSections;
 // console.log(window.innerHeight)
 // 3. Start from middle (2nd set)
@@ -31,13 +30,3 @@ container.addEventListener('wheel', (e) => {
     
     scroller.style.transform = `translateY(-${currentY}px)`;
 });
-Section.forEach((section)=>{
-  gsap.from(section,{
- delay:2,
- duartion:5,
- scale:0,
-
-
-
-  })
-})
