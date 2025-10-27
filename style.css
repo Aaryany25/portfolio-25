@@ -135,5 +135,5 @@ font-size: 1.5vw;
   top:0;
   left: 0;
  
-  /* filter: brightness(0.8) contrast(1) blur(5px); */
+  filter: brightness(0.8) contrast(1) ;
 }
