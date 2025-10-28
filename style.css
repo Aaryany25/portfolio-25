@@ -101,6 +101,24 @@ font-size: 1.5vw;
     font-size: 1.8vw;
     padding:14vw 2vw;
 }
+#Section3 h1{
+     font-size: 3.5vw;
+      padding-top: 5vw;
+      padding-left: 10vw;
+}
+#Section3 hr{
+    width: 100% ;
+    margin-left: 10vw;
+}
+#Section3 ol{
+    /* font-size: 2vw; */
+    /* padding-top: 5vw; */
+    padding-left: 10vw;
+    
+}
+#section3 li {
+    text-decoration: none;
+}
 /* BackGround Image */
 .guy-container {
     width: 100vw;
