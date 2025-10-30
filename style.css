@@ -81,6 +81,7 @@ html,body{
 #Section1{
     display: flex;
     flex-direction: column;
+    font-family: "Biryani", sans-serif;
 }
 #navbar{
     width: 100%;
@@ -103,7 +104,10 @@ html,body{
 
 }
 #Page1{
-    display:flex
+    display:flex;
+      font-family: "Biryani", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 #nav-right{
       width: 50%;
@@ -131,12 +135,12 @@ font-size: 5vw;
 width: 50%;
 height: 100%;
 /* background-color: aqua; */
-font-size: 1.5vw;
+font-size: 1.3vw;
 
 }
 #right p{
     width: 60%;
-     margin-top: 24vw;
+     margin-top: 22vw;
      margin-left: 15vw;
 }
 /* Section 2 */
@@ -182,29 +186,7 @@ margin-bottom: 2vw;
     /* background-color: aqua; */
   
 }
-/* BackGround Image */
-/* .guy-container {
-    width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  perspective: 1000px;
-}
 
-#guy {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -9;
-  position: sticky;
-  top:0;
-  left: 0;
- 
-  filter: brightness(0.8) contrast(1) ;
-} */
 /* Chatgpt */
 .galaxy {
   position: absolute;
@@ -224,7 +206,7 @@ margin-bottom: 2vw;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 60%;
+  width: 55%;
   transform: translate(-50%, -50%);
   z-index: -1;
   transition: transform 0.2s ease-out;

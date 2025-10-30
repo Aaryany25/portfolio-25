@@ -1,9 +1,11 @@
-// 1. Basic Setup
-
 const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
     smooth: true
 });
+function InfinteScroll(){
+// 1. Basic Setup
+
+
 const container = document.querySelector('#container');
 const scroller = document.querySelector('#scroller');
 // 2. Calculate heights
@@ -30,10 +32,9 @@ container.addEventListener('wheel', (e) => {
     
     scroller.style.transform = `translateY(-${currentY}px)`;
 });
+}
 
-
-
-
+function Background(){
 const krishna = document.querySelector('.krishna');
 const galaxy = document.querySelector('.galaxy');
 
@@ -59,4 +60,9 @@ document.addEventListener('mouseleave', () => {
   krishna.style.transform = 'translate(-50%, -50%) rotateY(0deg) rotateX(0deg) scale(1)';
   galaxy.style.transform = 'translate(0, 0) scale(1.1)';
 });
+
+}
+InfinteScroll()
+Background()
+
 
