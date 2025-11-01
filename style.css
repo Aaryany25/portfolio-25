@@ -127,7 +127,7 @@ html,body{
 width: 50%;
 height: 100%;
 /* background-color: aqua; */
-font-size: 5vw;
+font-size: 3vw;
  line-height:10vw;
  margin-top: 16vw;
 }
@@ -135,13 +135,13 @@ font-size: 5vw;
 width: 50%;
 height: 100%;
 /* background-color: aqua; */
-font-size: 1.3vw;
+font-size: 1.1vw;
 
 }
 #right p{
     width: 60%;
-     margin-top: 22vw;
-     margin-left: 15vw;
+     margin-top: 20vw;
+     margin-left: 12vw;
 }
 /* Section 2 */
 #Section2{
