@@ -118,7 +118,7 @@ html,body{
     align-items: center;
      font-size: 1.5vw;
     color:beige;
-    line-height:3vw;
+    line-height:1vw;
     text-transform: uppercase;
     font-weight: bold;
     padding: 1vw 2vw;
@@ -127,27 +127,34 @@ html,body{
 width: 50%;
 height: 100%;
 /* background-color: aqua; */
-font-size: 3vw;
- line-height:10vw;
- margin-top: 16vw;
+font-size: 4vw;
+ line-height:7vw;
+ margin-top: 20vw;
+ padding-left: 3vw;
+}
+#left p{
+  font-size: 1.5vw;
+  margin-bottom: 2vw;
+  /* background-color: aqua; */
 }
 #right{
 width: 50%;
 height: 100%;
 /* background-color: aqua; */
-font-size: 1.1vw;
-
+font-size: 1.3vw;
+padding-right: 10vw;
 }
 #right p{
-    width: 60%;
-     margin-top: 20vw;
+    width: 90%;
+     margin-top: 25vw;
      margin-left: 12vw;
+     /* margin-right: 5vw; */
 }
 /* Section 2 */
 #Section2{
     /* background-color: aqua; */
-    font-size: 1.8vw;
-    padding:14vw 2vw;
+    font-size: 3vw;
+    padding:18vw 3vw;
     font-weight: lighter;
 }
 #Section3 h1{

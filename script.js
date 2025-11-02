@@ -62,7 +62,7 @@ document.addEventListener('mouseleave', () => {
 });
 
 }
-InfinteScroll()
+InfinteScroll() 
 Background()
 
 
