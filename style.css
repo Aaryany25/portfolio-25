@@ -10,6 +10,16 @@ html,body{
     font-weight: lighter;
     color:beige;
 }
+#crsr {
+  width: 2.3vw;
+  height: 2.3vw;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 9;
+  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+}
 /* Fonts */
 .biryani-extralight {
   font-family: "Biryani", sans-serif;
@@ -158,7 +168,12 @@ padding-right: 10vw;
     font-weight: lighter;
 }
 #Section3 h1{
-     font-size: 3.5vw;
+     font-size: 5.5vw;
+      padding-top: 5vw;
+      padding-left: 10vw;
+}
+#Section3 h3{
+     font-size: 4.5vw;
       padding-top: 5vw;
       padding-left: 10vw;
 }
@@ -166,14 +181,16 @@ padding-right: 10vw;
     width: 100% ;
     margin-left: 10vw;
 }
-#Section3 ol{
+#Section3 ul{
     /* font-size: 2vw; */
     /* padding-top: 5vw; */
     padding-left: 10vw;
+    text-decoration: none;
     
 }
 #Section3 li {
     text-decoration: none;
+    
 }
 /* Section 4 */
 #Section4 h1{
