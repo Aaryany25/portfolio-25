@@ -100,40 +100,9 @@ document.addEventListener('mouseleave', () => {
 
 }
 
-// For Now Iam using this function later I will replace it with GSAP TextSplit 
-// function textsplitting(){
-//     var H1=document.querySelectorAll(".textSplit")
-//     H1.forEach(element => {
-//         var h1text = element.textContent
-//         var clutter=""
-//         var splitted = h1text.split(" ")
-//         splitted.forEach(function(elem){
-//             clutter +=`<span>${elem}</span>`
-           
-//         })
-//         element.innerHTML = clutter
-//     });
-// }
-// function gsapAnimation(){
-//     gsap.to(".textSplit",{
-//         color:"#e3e3c4",
-//         stagger:0.1,
-//         scrollTrigger:{
-//             trigger:".textSplit",
-//             scroller:"#main",
-//            markers:true,
-//             start:"top 40%",
-//             end:"top -20%",
-//             scrub:5,
-            
-//         }
-    
-//     })
-// }
+
 
 locomotiveAnimation()
 InfinteScroll() 
 Background()
 CursurAnimation()
-// textsplitting()
-// gsapAnimation()
