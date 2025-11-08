@@ -62,11 +62,13 @@ container.addEventListener('wheel', (e) => {
     scroller.style.transform = `translateY(-${currentY}px)`;
 });
 }
-function CursurAnimation() {
+function CursurAnimation(xScale,yScale) {
   document.addEventListener("mousemove", function (dets) {
     gsap.to("#crsr", {
       left: dets.x,
       top: dets.y,
+      scaleX: xScale,
+      scaleY: yScale
     });
   });
 
@@ -100,9 +102,45 @@ document.addEventListener('mouseleave', () => {
 
 }
 
+function mousemovement(){
+  var xScale = 1;
+  var yScale =1;
+  var xprev = 0;
+  var yprev = 0
+  window.addEventListener("mousemove",function(dets){
+xprev = dets.clientX
+yprev = dets.clientY
+ xScale = gsap.utils.clamp(0.8,1.2,dets.clientX - xprev);
+ yScale =gsap.utils.clamp(0.8,1.2,dets.clientY - yprev);
+// console.log(x,y)
+CursurAnimation(xScale,yScale)
+  })
+} 
+function ImageHover(){
+var elem = document.querySelectorAll(".elem")
+elem.forEach(function(elem){
+  elem.addEventListener("mousemove",function(dets){
+   const ydiff =Math.floor(dets.clientY- elem.getBoundingClientRect().top)
+   const xdiff =Math.floor(dets.clientX- elem.getBoundingClientRect().left)
+// console.log(dets.clientX,dets.clientY)
+gsap.to(elem.querySelector("img"),{
+  opacity:1,
+  ease:Power1,
+  top:ydiff,
+  left:dets.clientX
+})
+  })
+  elem.addEventListener('mouseleave',function(){
+    gsap.to(elem.querySelector("img"),{
+  opacity:0,
 
-
+})
+  })
+})
+}
+mousemovement()
 locomotiveAnimation()
 InfinteScroll() 
 Background()
 CursurAnimation()
+ImageHover()
