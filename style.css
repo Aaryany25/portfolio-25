@@ -167,9 +167,10 @@ padding-right: 10vw;
     padding:18vw 3vw;
     font-weight: lighter;
 }
+
 #Section3 h1{
      font-size: 7.5vw;
-      padding-top: 3vw;
+      /* padding-top: 3vw; */
       padding-left: 7vw;
 }
 #Elem-container{
@@ -179,8 +180,8 @@ padding-right: 10vw;
 }
 #Elem-container .elem {
    /* background-color: red; */
-   margin:1.5vw 0;
-   padding: 2.5vw 3vw;
+   margin:2.5vw 0;
+   padding: 1.5vw 3vw;
    /* border-top: 2px solid white; */
    border-bottom: 2px solid white;
    position: relative;
@@ -195,7 +196,7 @@ padding-right: 10vw;
    font-size: 2vw;
    margin-right: 10vw;
 }
-.elem img{
+/* .elem img{
   width: 400px;
   height: 300px;
   object-fit: cover;
@@ -203,11 +204,22 @@ padding-right: 10vw;
   top: 0;
   left: 0;
   z-index: 99;
-  /* display: none; */
   opacity: 0;
-  /* transform: translate(-50%,-50%); */
+  transform: translate(-50%,-50%);
+} */
+.elem img {
+  width: 400px;
+  height: 280px;
+  object-fit: cover;
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  will-change: transform, opacity;
 }
-
+.elem:nth-last-child img{
+transform: translate(0, -50%);
+}
 /* Section 4 */
 #Section4 h1{
 font-size: 6.5vw;
