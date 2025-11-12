@@ -116,29 +116,7 @@ yprev = dets.clientY
 CursurAnimation(xScale,yScale)
   })
 } 
-// function ImageHover(){
-// var elem = document.querySelectorAll(".elem")
-// elem.forEach(function(elem){
-//   elem.addEventListener("mousemove",function(dets){
-//    const ydiff =Math.floor(dets.clientY- elem.getBoundingClientRect().top)
-//    const xdiff =Math.floor(dets.clientX- elem.getBoundingClientRect().left)
-// // console.log(dets.clientX,dets.clientY)
-// gsap.to(elem.querySelector("img"),{
-//   opacity:1,
-//   ease:Power1,
-//   top:ydiff,
-//   left: xdiff
 
-// })
-//   })
-//   elem.addEventListener('mouseleave',function(){
-//     gsap.to(elem.querySelector("img"),{
-//   opacity:0,
-
-// })
-//   })
-// })
-// }
 function ImageHover() {
   var elem = document.querySelectorAll(".elem");
 
@@ -149,6 +127,7 @@ elem.addEventListener("mouseleave",function(){
     opacity:0
   })
 })
+
     elem.addEventListener("mousemove", function (dets) {
       const rect = elem.getBoundingClientRect();
       const ydiff = dets.clientY - rect.top;
@@ -157,7 +136,7 @@ elem.addEventListener("mouseleave",function(){
 
       gsap.to(img, {
         opacity: 1,
-        // ease: "power1.out",
+         ease: "power1.out",
         top: ydiff,
         left: xdiff,
         duration: 0.2,
